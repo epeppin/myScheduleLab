@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Schedule</title>
+    <style>
+        #mon, #tue, #wed, #thur, #fri, #sat, #sun {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Schedule</h1>
+
+    <form>
+        <fieldset>
+            <legend>Choose a Day to View a Schedule</legend>
+            <input type="radio" name="days" id="monday" checked="checked" value="monday">
+            <label for="monday">Monday</label>
+            <br>
+
+            <input type="radio" name="days" id="tuesday" value="tuesday">
+            <label for="monday">Tuesday</label>
+            <br>
+            <input type="radio" name="days" id="wednesday" value="wednesday">
+            <label for="monday">Wednesday</label>
+            <br>
+            <input type="radio" name="days" id="thursday" value="thursday">
+            <label for="monday">Thursday</label>
+            <br>
+            <input type="radio" name="days" id="friday" value="friday">
+            <label for="monday">Friday</label>
+            <br>
+            <input type="radio" name="days" id="saturday" value="saturday">
+            <label for="monday">Saturday</label>
+            <br>
+            <input type="radio" name="days" id="sunday" value="sunday">
+            <label for="monday">Sunday</label>
+        </fieldset>
+    </form>
+
+    <div id="schedule">
+        <table id="mon">
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Work</td>
+                <td>7am - 3pm</td>
+            </tr>
+        </table>
+        <table id="tue">
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Work</td>
+                <td>7am - 5pm</td>
+            </tr>
+        </table>
+        <table id="wed">
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Work</td>
+                <td>7am - 2pm</td>
+            </tr>
+        </table>
+        <table id="thur">
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Work</td>
+                <td>7am - 5:30pm</td>
+            </tr>
+        </table>
+        <table id="fri">
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Homework</td>
+                <td>5pm - 8pm</td>
+            </tr>
+        </table>
+        <table id="sat">
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Relax</td>
+                <td>11am - 10pm</td>
+            </tr>
+        </table>
+        <table id="sun">
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Relax</td>
+                <td>11am - 10pm</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
